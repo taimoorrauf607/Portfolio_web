@@ -794,12 +794,6 @@ p.lead {
   transform: scale(1.3);
 }
 
-/* .work-img {
-  display: block;
-  overflow: hidden;
-  height: 250px;
-} */
-
 .work-img {
   width: 100%; /* Makes the image full width */
   height: 250px; /* Fixed image height */
