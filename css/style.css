@@ -780,17 +780,13 @@ p.lead {
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
-
 .work-box {
   position: relative;
   margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   background-color: #fff;
-  height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center; /* Center the content */
 }
 
 .work-box:hover img {
@@ -798,69 +794,64 @@ p.lead {
   transform: scale(1.3);
 }
 
-.work-img {
+/* .work-img {
   display: block;
   overflow: hidden;
   height: 250px;
+} */
+
+.work-img {
+  width: 100%; /* Makes the image full width */
+  height: 250px; /* Fixed image height */
+  overflow: hidden;
 }
 
 .work-img img {
-  width: 100%; /* Make the image stretch to fit */
-  height: 100%; /* Maintain consistency */
-  object-fit: cover; /* Ensures the image fits properly without distortion */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: all 1s;
 }
 
 .work-content {
-  padding: 2rem 3% 1rem 4%;
-  text-align: left;
-  
-}
-
-.work-content .w-more {
-  color: #4e4e4e;
-  font-size: .8rem;
-  display: flex; /* Enables flexbox for the container */
-  justify-content: center; /* Centers the button horizontally */
-  align-items: center; /* Centers the button vertically */
-  text-align: center; /* Fallback for inline elements */
-  padding-top: 0.5rem;
-  padding-left: 12rem;
-}
-
-.work-content .w-more .w-ctegory {
-  color: #0078ff;
-}
-
-.work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
-}
-
-.work-content .w-like a {
-  color: #0078ff;
-}
-
-.work-content .w-like .num-like {
-  font-size: .7rem;
+  width: 100%; /* Full width of container */
+  padding: 1.5rem 3%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .w-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left; /* Aligns title to the left */
 }
 
+.w-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify; /* Aligns description to the left */
+  width: 100%; /* Ensures description spans the full width */
+  margin-bottom: 1rem;
+}
+
+.work-content .w-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .btn_color {
-background: linear-gradient(90deg, #6091cc, #ef8ebf);
-border: none;
-color: white;
-padding: 1rem 1rem;
-font-weight: 600;
-border-radius: 2rem;
-cursor: pointer;
-transition: background-color 0.3s ease, transform 0.2s ease
+  background: linear-gradient(90deg, #6091cc, #ef8ebf);
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /*======================================
