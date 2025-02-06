@@ -1005,6 +1005,9 @@ a.platform-link {
   margin-bottom: 3rem;
 }
 
+.post-box-1 {
+  width: 130%;
+}
 .blog-wrapper .article-title {
   font-size: 1.5rem;
 }
