@@ -781,7 +781,6 @@ p.lead {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center the content */
 }
 
 .work-box:hover img {
@@ -791,9 +790,7 @@ p.lead {
 
 .work-img {
   width: 100%;
-  /* Makes the image full width */
   height: 250px;
-  /* Fixed image height */
   overflow: hidden;
 }
 
